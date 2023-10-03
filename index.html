@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/calculator.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="container" id="calculatorBodys">
+        <div class="group" id="group">
+            EAFA
+        </div>
+        <p id="currentTotal"></p>
+        <input type="number" id="numIn" placeholder="0"><br>
+        <div class="hr"></div>
+        <button type="button" onclick="clearAll()" id="clearButton"><i class="fa-solid fa-c"></i></button>
+        <button type="button" onclick="moduloNum()" id="operatorButton"><i class="fa-light fa-percent"></i></button>
+        <button type="button" onclick="del()" id="operatorButton"><i class="fa-solid fa-delete-left"></i></button>
+        <button type="button" onclick="divNum()" id="operatorButton"><i class="fa-solid fa-divide"></i></button><br>
+        <button type="button" onclick="num7()" id="numberButton">7</button>
+        <button type="button" onclick="num8()" id="numberButton">8</button>
+        <button type="button" onclick="num9()" id="numberButton">9</button>
+        <button type="button" onclick="mulNum()" id="operatorButton"><i class="fa-solid fa-xmark"></i></button><br>
+        <button type="button" onclick="num4()" id="numberButton">4</button>
+        <button type="button" onclick="num5()" id="numberButton">5</button>
+        <button type="button" onclick="num6()" id="numberButton">6</button>
+        <button type="button" onclick="subNum()" id="operatorButton"><i class="fa-solid fa-minus"></i></button><br>
+        <button type="button" onclick="num1()" id="numberButton">1</button>
+        <button type="button" onclick="num2()" id="numberButton">2</button>
+        <button type="button" onclick="num3()" id="numberButton">3</button>
+        <button type="button" onclick="addNum()" id="operatorButton"><i class="fa-solid fa-plus"></i></button><br>
+        <button type="button" onclick="exponentiation()" id="operatorButton"><i class="fa-solid fa-superscript"></i></button>
+        <button type="button" onclick="num0()" id="numberButton">0</button>
+        <button type="button" onclick="inDec()" id="operatorButton">.</button>
+        <button type="button" onclick="equals()" id="equalsButton"><i class="fa-solid fa-equals"></i></button>
+    </div>
+
+    <script src="js/calculator.js"></script>
+</body>
+</html>
